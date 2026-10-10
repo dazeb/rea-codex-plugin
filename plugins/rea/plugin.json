@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "rea",
+  "version": "0.1.0",
+  "description": "Inspect shipped applications, binaries, packages, firmware, and runtime evidence with REA.",
+  "author": { "name": "dazeb", "url": "https://github.com/morluto/rea" },
+  "homepage": "https://github.com/morluto/rea",
+  "license": "MIT",
+  "keywords": ["reverse-engineering", "binary-analysis", "decompiler", "mcp", "rea"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "REA",
+        "shortDescription": "Reverse engineer anything",
+        "longDescription": "A local Codex integration for REA by morluto. Inspect native binaries, .NET assemblies, JavaScript and Electron apps, packages, firmware, and supported runtime evidence. Includes the upstream investigation skill and a version-pinned MCP server. Native analysis requires a compatible installed analysis engine.",
+        "developerName": "dazeb",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/morluto/rea",
+        "defaultPrompt": [
+          "Inspect this application and explain how its features work.",
+          "Compare these two releases and show the evidence for changes.",
+          "Analyze this binary and explain its important functions."
+        ],
+        "brandColor": "#20252b",
+        "composerIcon": "./assets/rea.svg",
+        "logo": "./assets/rea.svg"
+      }
+    }
+  }
+}
